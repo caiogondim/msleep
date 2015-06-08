@@ -1,6 +1,13 @@
-var delay = 2000
-var initTime = new Date
+/**
+ * Blocks the main thread for `sleepTime` ms
+ * @param  {Number} sleepTime number of ms to block the main thread
+ * @return {Undefined}
+ */
+function msleep(sleepTime) {
+  var initTime = new Date
+  while((new Date).getTime() < (initTime.getTime() + sleepTime));
+}
 
 console.log('init')
-while ((new Date).getTime() < (initTime.getTime() + delay));
+msleep(4000)
 console.log('end')
