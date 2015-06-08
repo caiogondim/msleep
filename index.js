@@ -8,6 +8,18 @@ function msleep(sleepTime) {
   while((new Date).getTime() < (initTime.getTime() + sleepTime));
 }
 
-console.log('init')
-msleep(4000)
-console.log('end')
+// Exports
+// -------
+
+function isNode() {
+  return (
+    typeof module !== 'undefined' &&
+    typeof module.exports !== 'undefined'
+  )
+}
+
+if (isNode) {
+  module.exports = msleep
+} else {
+  window.msleep = msleep
+}
