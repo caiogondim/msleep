@@ -9,6 +9,7 @@ describe('msleep', function () {
     var timeEnd = (new Date).getTime()
 
     msleep(sleepTime)
+    timeEnd = (new Date).getTime()
 
     assert(
       (timeStart + sleepTime) === (timeEnd - 1) ||
