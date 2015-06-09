@@ -12,3 +12,18 @@ Useful for:
 ### msleep(sleepTime)
 
 - `sleepTime`: time in miliseconds to block the thread
+
+### Usage
+
+In **node**, install the package through [npm](https://www.npmjs.com/package/msleep) and just `require` it.
+```js
+var msleep = require('msleep')
+msleep(3000) // Will block the main thread for 3 seconds
+```
+
+In the **browser**, you should download the minified version or use browserify.
+If you download the minified version, it will expose the `msleep` function to
+the `window` global object.
+```js
+msleep(5000) // Will block the main thread for half a second
+```
