@@ -1,3 +1,5 @@
+<img src="http://rawgit.com/caiogondim/msleep/master/img/logo.svg">
+
 # msleep
 
 Small function that mimics the `usleep` C function, blocking the main thread.
