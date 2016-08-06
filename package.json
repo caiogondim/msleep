@@ -1,10 +1,9 @@
 {
   "name": "msleep",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Small function that mimics the `usleep` C function, blocking the main thread.",
   "main": "src/index.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.0",
     "chai": "^3.0.0",
