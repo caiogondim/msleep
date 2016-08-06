@@ -4,9 +4,9 @@
   "description": "Small function that mimics the `usleep` C function, blocking the main thread.",
   "main": "src/index.js",
   "dependencies": {
-    "gulp": "^3.9.0"
   },
   "devDependencies": {
+    "gulp": "^3.9.0",
     "chai": "^3.0.0",
     "gulp-header": "^1.2.2",
     "gulp-mocha": "^2.1.1",
